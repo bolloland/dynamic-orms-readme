@@ -4,7 +4,10 @@ require 'sqlite3'
 require_relative "../lib/song.rb"
 require_relative "../config/environment.rb"
 
-
+saw_it_again = Song.new(name: "Saw It Again", album: "Phish Destroys America")
+puts "song name: " + saw_it_again.name
+puts "song album: " + saw_it_again.album
+saw_it_again.save
 song = Song.new(name: "Hello", album: "25")
 puts "song name: " + song.name
 puts "song album: " + song.album
